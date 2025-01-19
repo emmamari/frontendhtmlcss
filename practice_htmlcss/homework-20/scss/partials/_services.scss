@@ -1,0 +1,123 @@
+@use "mixins" as *;
+@use "var" as *;
+
+.services {
+  margin-bottom: 100px;
+  
+  &-title {
+    color: $colorBrand;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 138px;
+    margin-bottom: 46px;
+  }
+  }
+
+  .services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .card-1 {
+  flex-basis: calc(50% - 5px);
+  border-radius: 3px;
+  background: linear-gradient(90deg, #FFF 47.56%, rgba(255, 255, 255, 0.00) 98.81%), url(../images/servicesimg.jpg) no-repeat top right / auto 100%;
+  margin-bottom: 10px;
+  padding: 55px 60px 32px 50px;
+  position: relative;
+
+  &:hover {
+    @include hover {
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+    .card-arrow path {
+      stroke: $orange;
+    }
+  }
+
+  @include desktop {
+    padding: 45px 40px 23px 40px;
+  }
+
+  @include tablet {
+    padding: 35px 35px 18px 35px;
+    flex-basis: calc(100%);
+  }
+
+  @include mobile {
+    padding: 20px 20px 15px 20px;
+  }
+  }
+
+  .card2 {
+  background: linear-gradient(90deg, #FFF 47.56%, rgba(255, 255, 255, 0.00) 98.81%), url(../images/servicesimg2.jpg) no-repeat top right / auto 100%;
+  }
+
+  .card3 {
+    background: linear-gradient(90deg, #FFF 47.56%, rgba(255, 255, 255, 0.00) 98.81%), url(../images/servicesimg3.jpg) no-repeat top right / auto 100%;
+  }
+
+  .card4 {
+    background: linear-gradient(90deg, #FFF 47.56%, rgba(255, 255, 255, 0.00) 98.81%), url(../images/servicesimg4.jpg) no-repeat top right / auto 100%;
+  }
+
+  .card-link {
+    text-decoration: none;
+  }
+
+.card-info-title {
+  background-image: url(../images/services1.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 90px;
+  padding-top: 10px;
+  height: 80px;
+  color: $colorBrand;
+  font-size: 24px;
+  font-weight: 700;
+
+  @include desktop {
+    padding-top: 0;
+  }
+
+  @include mobile {
+    font-size: 19px;
+  }
+}
+
+.card-title-2 {
+  background-image: url(../images/services2.png);
+}
+
+.card-title-3 {
+  background-image: url(../images/services3.png);
+}
+
+.card-title-4 {
+  background-image: url(../images/services4.png);
+}
+
+.card-info-text {
+  color: $colorBrand;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 303px;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.card-arrow {
+  position: absolute;
+  bottom: 27px;
+  right: 27px;
+
+  @include mobile {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+

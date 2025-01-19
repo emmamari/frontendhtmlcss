@@ -1,0 +1,89 @@
+@use "var" as *;
+@use "mixins" as *;
+
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 108px;
+  max-width: 1440px;
+
+  &__col {
+    flex-basis: 50%;
+
+    @include desktop {
+      flex-basis: 100%;
+    }
+  }
+
+  &__info {
+    background: url(../images/rungstop.png) top left no-repeat, url(../images/rungsbuttom.png) bottom right no-repeat, #EEEEEE;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include desktop {
+      justify-content: flex-start;
+      padding-top: 40px;
+      text-align: center;
+    }
+  }
+
+  &__inner {
+    max-width: 655px;
+    padding-left: 15px;
+    margin-bottom: 54px;
+
+    @include desktop {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    color: #2A2C1F;
+    font-size: 56px;
+    line-height: 67px;
+    font-weight: 400;
+    margin: 0;
+
+    @include mobile {
+      font-size: 48px;
+      line-height: 55px;
+    }
+  }
+
+  .span-bar {
+    margin-top: 28px;
+  }
+
+  &__text {
+    color: #65665C;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 503px;
+
+    @include desktop {
+      max-width: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  .hover {
+    &:hover {
+      @include hover {
+        background: #ca4611;
+      }
+    }
+  }
+
+  .input {
+    @include mobile {
+      margin-right: 0;
+      padding: 9px 10px 9px 45px;
+    }
+  }
+}

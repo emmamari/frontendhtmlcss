@@ -1,0 +1,103 @@
+@use "var" as *;
+@use "mixins" as *;
+
+.fast {
+  margin-bottom: 153px;
+  display: flex;
+
+  @include mobile {
+    margin-bottom: 70px;
+  }
+
+  @include desktop {
+    flex-wrap: wrap;
+  }
+
+
+  &__img {
+    margin-right: 6%;
+  }
+
+  &__image {
+    border-radius: 16px;
+    width: 100%;
+    display: block;
+  }
+
+  &__col {
+    flex-basis: 50%;
+
+    @include desktop {
+      flex-basis: 100%;
+    }
+  }
+
+  .title-cards {
+    margin: 0;
+  }
+
+  .span-bar {
+    margin-top: 55px;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $gray;
+    margin-top: 31px;
+    margin-bottom: 35px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @include desktop {
+      justify-content: space-around;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  .card {
+    width: 241px;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  .card_payments {
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  .btn {
+    margin-right: 28px;
+
+    @include mobile {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+
+  &__actions {
+    @include desktop {
+      text-align: center;
+    }
+  }
+
+  .link-arrow {
+    &:hover {
+      @include hover {
+        border-bottom: 2px solid $gray;
+      }
+    }
+  }
+}

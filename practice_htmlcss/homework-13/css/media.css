@@ -1,0 +1,432 @@
+@media screen and (max-width: 980px) {
+	.main-list li {
+		margin-right: 44px;
+	}
+
+  .main-block {
+    display: block;
+  }
+
+  .main-block-right {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right-width {
+    flex-basis: 50%;
+    background-size: cover;
+  }
+
+  .main-block-right-1 {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .main-block-right-2 {
+    margin-top: 0;
+  }
+
+  .block-company-image {
+    margin-left: 150px;
+  }
+
+  .info-company {
+    max-width: 900px;
+  }
+
+  .right {
+    margin-left: 100px;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+	.main-list li {
+		margin-right: 20px;
+	}
+
+	.cart {
+		padding: 15px 8px 15px 34px;
+	}
+
+	.cart span, 
+	.cart small {
+		display: none;
+	}
+
+  .block-company-image {
+    margin-left: 93px;
+  }
+
+  .info-company {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+	.header {
+		padding: 15px 0 7px;
+		border-bottom: 3px solid #0A4ECB;
+	}
+
+	.header-inner {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 21px;
+	}
+
+	.toggle-nav {
+		display: block;
+	}
+
+	.main-nav {
+		overflow: hidden;
+    transition: height 2s;	
+	}
+
+	.nav-hidden {
+		height: 0;
+	}
+
+	.main-list {
+		display: block;
+		text-align: center;
+	}
+
+	.main-list li {
+		margin: 8px 0;
+	}
+
+  .main-block-right {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .right-width {
+    flex-basis: 100%;
+  }
+
+  .main-block-right-1 {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .right {
+  margin-left: 100px;
+  }
+
+.block-company-image {
+  margin-left: 5px;
+  }
+
+  .info-company {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .catalog-card {
+    width: 240px;
+  }
+
+  .catalog-text {
+    width: 127px;
+    margin-bottom: 30px;
+  }
+
+  .block-company-text {
+    width: 100%;
+  } 
+
+  .block-company-card-info {
+    display: block;
+    width: 100%;
+  }
+
+  .block-company-link {
+    display: none;
+  }
+
+  .block-company-image {
+    display: none;
+  }
+
+  .block-company-list {
+    display: none;
+  }
+
+  .company-text-mobi {
+    display: block;
+    position: relative;
+    padding-bottom: 27px;
+  }
+
+  .link-mobi {
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 171px;
+    margin-top: 27px;
+  }
+
+  .information-background {
+    display: block;
+    height: auto;
+  }
+
+  .width-block {
+    margin-bottom: 39px;
+  }
+
+  .information-title {
+    margin-top: 0;
+    padding-top: 30px;
+  }
+
+  .information-link {
+    padding-bottom: 20px;
+  }
+
+  .left {
+    margin-left: 50px;
+  }
+
+  .right {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .catalog-card {
+    width: 190px;
+    height: 180px;
+    background-size: 90px;
+  }
+
+  .catalog-text {
+    width: 93px;
+    margin-bottom: 15px;
+    left: 54px;
+  }
+
+  .block-company-text {
+    width: 100%;
+  }
+
+  .block-company-card-info {
+    display: block;
+    width: 100%;
+  }
+
+  .left {
+    margin-left: 25px;
+  }
+
+  .right {
+    margin-left: 25px;
+  }
+
+  .information-text {
+    width: 400px;
+    height: auto;
+  }
+
+
+  .width-block {
+    margin-bottom: 10px;
+  }
+
+  .company-text-mobi {
+    display: block;
+    flex-basis: 280px;
+    background-color: #F2F3F4;
+  }
+
+  .link-mobi {
+    display: block;
+    margin-top: 23px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .catalog-card {
+    width: 165px;
+    height: 200px;
+    background-size: 85px;
+  }
+
+  .catalog-text {
+    width: 93px;
+    margin-bottom: 27px;
+    left: 30px;
+  }
+
+  .link-mobi {
+    margin-top: 40px;
+  }
+
+  .information-text {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+	.logo img {
+		width: 220px;
+		height: auto;
+	}
+
+	.contact {
+		padding-left: 0;
+	}
+
+	.contact::before {
+		display: none;
+	}
+
+  .main-block {
+    margin-top: 22px;
+  }
+
+  .main-block-left {
+    background: #fff url(../images/mainpicmobi.jpg) no-repeat;
+    border-radius: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .main-block-left-title {
+    font-size: 22px;
+    padding-top: 320px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    margin-left: 38px;
+    margin-top: 0;
+  }
+
+  .main-block-left-text {
+    display: none;
+    margin-top: 0;
+    padding-bottom: 30px;
+    width: 180px;
+    margin-left: 38px;
+  }
+
+  .text-mobile {
+    display: block;
+  }
+
+  .main-block-btn {
+    margin-left: 38px;
+  }
+
+  .right-width {
+    width: 340px;
+}
+
+  .main-block-right {
+    display: block;
+  }
+
+  .main-block-right-1-title {
+    width: 170px;
+  }
+
+  .block-catalog-title {
+    font-size: 28px;
+  }
+
+  .catalog-card {
+    width: 150px;
+    height: 200px;
+    background-size: 78px;
+  }
+
+  .catalog-text {
+    width: 115px;
+    margin-bottom: 27px;
+    left: 24px;
+  }
+
+  .block-company-title {
+    font-size: 28px;
+  }
+
+  .block-company-text {
+    width: 350px;
+  }
+  
+  .company-card-info {
+    width: 340px;
+  }
+
+  .link-mobi {
+    margin-top: 70px;
+}
+
+  .information {
+    margin-bottom: 75px;
+  }
+
+  .information-background {
+    background: none;
+  }
+
+  .information-delivery {
+    background-color: #fff;
+    width: 300px;
+    height: 584px;
+    border-radius: 12px;
+    
+  }
+
+  .information-payment {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 300px;
+    height: 584px;
+  }
+
+  .information-title {
+    font-size: 28px;
+    margin-top: 54px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .information-text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .information-link {
+    padding-left: 30px;
+    padding-bottom: 60px;
+  }
+
+  .width-block {
+    width: 330px;
+    margin-bottom: 20px;
+  }
+
+  .left {
+    margin-left: 0;
+  }
+
+  .right {
+    margin-left: 0;
+  }
+
+  .footer-img {
+    display: none;
+  }
+
+  .footer-company {
+    margin-left: 55px;
+  }
+}
+
+

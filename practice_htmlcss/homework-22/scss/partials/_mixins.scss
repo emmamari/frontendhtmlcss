@@ -1,0 +1,29 @@
+@mixin desktop {
+  @media screen and (max-width: 1020px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 440px) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+@mixin resetList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

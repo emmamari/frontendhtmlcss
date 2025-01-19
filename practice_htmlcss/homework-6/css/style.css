@@ -1,0 +1,384 @@
+body {
+  font-family: 'Inter', sans-serif;;
+  font-size: 14px;
+  color: #222;
+  background: #F2F2F2;
+  line-height: 1.4;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* HEADER */
+
+.header {
+  background: #fff;
+  padding: 37px 0 48px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main-nav {
+  margin-bottom: 5px;
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+}
+
+.phone {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.header-btn {
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+  padding-left: 32px;
+  padding-top: 8px;
+  padding-bottom: 3px;
+  background-repeat: no-repeat;
+}
+
+.header-btn-ic-user {
+  background-image: url(../images/icon-user.png);
+  background-position: left top 3px;
+  margin-right: 24px;
+}
+
+.header-btn-ic-cart {
+  background-image: url(../images/basket.png);
+  background-position: left top;
+}
+
+/* PROMO BLOCK */
+
+.promo-block {
+  background-image: url(../images/promo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 11px 0 24px;
+}
+
+.promo-block-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.promo-block-left {
+  display: flex;
+}
+
+.promo-block-right {
+  width: 310px;
+  align-self: center;
+}
+
+.promo-block-info {
+  width: 432px;
+  margin-right: 127px;
+  padding-top: 11px;
+}
+
+.promo-block-info-title {
+  font-size: 72px;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+}
+
+.promo-block-info-desc {
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+}
+
+.promo-block-right-text {
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+.promo-block-right-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 55px;
+}
+
+.promo-block-bottom {
+  display: flex;
+  gap: 36px;
+}
+
+.card {
+  display: flex;
+  flex-basis: 33.3333%;
+  flex-direction: column;
+  background: #fff;
+  padding: 32px 20px 22px;
+  box-sizing: border-box;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card-phone {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.card-link {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: auto;
+}
+
+.card-link-green {
+  color: #3CA255;
+  border: 2px solid #3CA255;
+  padding: 0;
+}
+
+.card-link-green span {
+  display: inline-block;
+  background-image: url(../images/whatsappbtn.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 10px 0 10px 45px;
+}
+
+.card-link-blue {
+  color: #1C69D4;
+  border: 2px solid #1C69D4;
+}
+
+/* CATALOG */
+
+.catalog-color {
+  background-color: #fff;
+  margin-top: 87px;
+}
+
+.catalog-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  padding-top: 36px;
+  margin-bottom: 50px;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  flex-basis: 23.5%;
+}
+
+.catalog-link-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.catalog-link {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #1C69D4;
+  text-decoration: none;
+  line-height: 2.0;
+}
+
+.catalog-service-btn {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #1C69D4;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.catalog-service-content {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+
+.catalog-service-img {
+  margin: 7px 0 7px 10px ;
+}
+
+.catalog-service-img-battery {
+  margin: 12px 0 11px 2px;
+}
+
+.catalog-service-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 20px 9px 20px 5px;
+}
+
+/* BLOCK-STOCK */
+
+.block-stock {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+
+.block-stock-content {
+  align-self: center;
+  font-weight: 600;
+  text-align: center;
+}
+
+.block-stock-price {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  background-color: #FF4400;
+  padding: 15px 15px 11px;
+  margin-bottom: 42px;
+}
+
+.block-stock-text {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.block-stock-subtext {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  line-height: 2.6;
+}
+
+.block-stock-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+}
+
+/* FOOTER */
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-link {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.footer-link-img {
+  align-self: center;
+  margin-bottom: 28px;
+}
+
+.footer-link-vk {
+  background-image: url(../images/vk.png);
+}
+
+.footer-link-whatsapp {
+  background-image: url(../images/whatsApp.png);
+}
+
+.foter-link-instagram {
+  background-image: url(../images/instagram.png);
+}
+
+.footer-link-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+
+.footer-link-text {
+  text-indent: 102%;
+  overflow: hidden;
+}

@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main-nav {
+  float: right;
+}
+
+/* Header */
+
+.header {
+  background-color:#343434;
+  font-size: 14px;
+  color: #fff;
+  padding: 15px 0 25px;
+}
+
+.main-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.main-nav-item {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.main-nav-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Main-block */
+
+.main-block {
+  background-image: url(../images/main-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 290px;
+  padding-bottom: 20px;
+  border-bottom: 4px solid #f0eeee;
+}
+
+.main-block-news {
+  background-color:  #e4593a;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.main-block-news strong {
+  text-transform: uppercase;
+  border-right: 1px solid #fff;
+  padding-right: 10px;
+}
+
+.main-block-news span {
+  padding-left: 10px;
+}
+
+/* Article */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.foto {
+  float: right;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:  #272630;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.article-subtitle {
+  color: #f26c4f;
+  text-decoration: none;
+}
+
+.article-text {
+  font-size: 15px;
+  color:  #737373;
+  line-height: 1.7;
+}
+
+hr {
+  margin: 45px 70px 40px;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.foto-img {
+  float: left;
+  margin-right: 20px;
+}
+
+.text-button {
+  margin-bottom: 150px;
+}
+
+/* Footer */
+
+.footer {
+  background-color:  #343434;
+  padding: 20px 0;
+  border-top: 8px solid #f0eeee;
+}
+
+.footer-text {
+  float: left;
+  color:  #aeaeae;
+}
+
+.footer-link {
+  margin-left: 450px;
+}
+
+.footer-link-fb {
+  background-image: url(../images/ic-fb.png);
+}
+
+.footer-link-tw {
+  background-image: url(../images/ic-tw.png);
+}
+
+.footer-link-rss {
+  background-image: url(../images/ic-rss.png);
+}
+
+.media-link {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e4593a;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-left: 10px;
+  
+}
+
+.text-link {
+  text-indent: 102%;
+  overflow: hidden;
+}

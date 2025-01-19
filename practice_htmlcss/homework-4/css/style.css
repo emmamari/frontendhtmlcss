@@ -1,0 +1,166 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #111111;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #111111;
+
+}
+
+.container {
+  min-width: 900px;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Header */
+
+.header {
+  padding-top: 35px;
+  padding-bottom: 26px;
+  height: 66px;
+}
+
+.logo {
+  float: left;
+  margin-top: 15px;
+}
+
+.phone {
+  float: right;
+  font-weight: 900;
+  color: #007198;
+  margin-top: 33px;
+  margin-bottom: 23px;
+  text-decoration: none;
+}
+
+.main-nav-list {
+  margin: 0;
+  list-style: none;
+  margin-left: 71px;
+}
+
+.main-nav-item {
+  display: inline-block;
+  margin: 35px 30px 26px 0;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+}
+
+/* Main-block */
+
+.main-block-title {
+  font-size: 50px;
+  font-weight: 400;
+  color: #007198;
+  width: 919px;
+  margin-bottom: 27px;
+}
+
+.main-block-news {
+  text-decoration: none;
+}
+
+.main-block-text-news {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.arrow {
+  background-image: url(../images/arrow.png);
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 30px;
+}
+
+.main-block-text {
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+/* Article */
+
+.article {
+  margin-top: 49px;
+}
+
+.article-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 65px;
+}
+
+.article-img {
+  float: left;
+  margin: 14px 74px 95px 0;
+}
+
+.article-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.desc-article {
+  margin-bottom: 211px;
+}
+
+.desc-title {
+  margin-top: 46px;
+  margin-bottom: 26px;
+}
+.article-subtitle {
+  color: #007198;
+}
+
+.article-img-2 {
+  float: right;
+  margin-left: 35px;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 67px;
+  padding-bottom: 116px;
+  background-color: rgba(72, 184, 223, 0.2);
+}
+
+.footer-line {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.5);
+}
+
+.footer-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(17, 17, 17, 0.5);
+  margin-top: 41px;
+  display: inline-block;
+}
+
+.footer-addres {
+  float: right;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 43px;
+}

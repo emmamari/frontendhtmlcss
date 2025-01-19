@@ -1,0 +1,515 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.3;
+}
+
+.container {
+  max-width: 1350px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header {
+  background: linear-gradient(90deg, #443682 14.58%, #28418A 39.75%, #00669C 68.41%);
+  padding: 10px 0 33px;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 90px;
+  margin-bottom: 27px;
+  padding-left: 114px;
+  background: url(../images/logo.svg) top left no-repeat;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-text-top {
+  font-weight: 700;
+}
+
+.logo-text-bottom {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.socials a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 11px;
+  text-indent: 102%;
+  overflow: hidden;
+}
+
+.ic-instagram {
+  background: url(../images/ic-instagram.svg) center no-repeat;
+}
+
+.ic-vk {
+  background: url(../images/ic-vk.svg) center no-repeat;
+}
+
+.ic-telegram {
+  background: url(../images/ic-telegram.svg) center no-repeat;
+}
+
+.ic-whatsapp {
+  background: url(../images/ic-whatsapp.svg) center no-repeat;
+}
+
+.calls {
+  position: absolute;
+  background: #fff;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+  width: calc(100% - 32px);
+  border-radius: 0 0 20px 20px;
+  padding: 21px 18px 19px;
+  text-align: right;
+  font-size: 15px;
+}
+
+.calls-phone {
+  display: inline-block;
+  margin-right: 16px;
+  background: linear-gradient(90deg, #5F24A8 17.8%, #01669C 109.12%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.calls-phone::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../images/ic-phone-sm.svg) center no-repeat;
+}
+
+.calls-btn {
+  position: relative;
+  background: linear-gradient(90deg, #5F24A8 17.8%, #01669C 109.12%);
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  color: #000;
+  padding: 12px 20px 10px;
+}
+
+.calls-btn::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.calls-btn span {
+  position: relative;
+  z-index: 3;
+  background: linear-gradient(188deg, #5F24A8 6.17%, #04629A 120.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-nav {
+  overflow: hidden;
+  transition: height 2s;
+}
+
+.nav-hidden {
+  height: 0;
+}
+
+.main-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav-item {
+  text-align: right;
+}
+
+.main-nav-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.toggle-nav {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  width: 53px;
+  height: 53px;
+  background: url(../images/ic-list.svg) center no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.main-block {
+  background:
+    url(../images/main-pic-sm.png) right bottom 200px / 100% no-repeat,
+    url(../images/main-bg-sm.png) left bottom 307px / cover no-repeat;
+  padding: 125px 0 610px;
+}
+
+.main-block-title {
+  color: #FFF;
+  font-size: 39px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  margin-top: -8px;
+}
+
+.main-block-list {
+  margin-bottom: 18px;
+}
+
+.main-block-item {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 119.687%;
+  margin-left: -20px;
+}
+
+.main-block-btn {
+  background: #00BB34;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 21px 51px 20px 69px;
+  border: none;
+  border-radius: 10px;
+  filter: drop-shadow(2px 8px 30px #00BB34);
+}
+
+.main-block-btn:hover {
+  box-shadow: 2px 4px 20px #025c1b;
+}
+
+.main-block-btn:active {
+  box-shadow: 2px 4px 20px #0f1310;
+  
+}
+
+.main-block-card {
+  margin-bottom: 61px;
+  margin-top: -152px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 19px;
+}
+
+.card-info {
+  width: 209px;
+  height: 224px;
+  background: linear-gradient(180deg, #A6DBF5 0%, #451874 97.92%);
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info::before {
+  background: #fff url(../images/minutessm.png) no-repeat center;
+  display: block;
+  content: '';
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+.card-info-2::before {
+  background: #fff url(../images/interactivesm.png) no-repeat center;
+}
+
+.card-info-3::before {
+  background: #fff url(../images/qualitysm.png) no-repeat center;
+}
+
+.card-info-4::before {
+  background: #fff url(../images/garantsm.png) no-repeat center;
+}
+
+.card-text {
+  padding-top: 0px;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.question-block {
+  position: relative;
+  margin-bottom: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.question-block-img {
+  box-shadow: 0px 4px 15px 5px rgba(95, 36, 168, 0.50);
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+}
+
+.question-block-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  max-width: 400px;
+  width: 100%;
+}
+
+.question-block-textb {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 119.687%;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.question-block-textsm {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 119.687%;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.question-block-btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background: #00BB34;
+  box-shadow: 2px 4px 20px 0px rgba(0, 187, 52, 0.50);
+  padding: 21px 56px 20px;
+  cursor: pointer;
+  margin-bottom: 72px;
+}
+
+.question-block-btn:hover {
+  box-shadow: 2px 4px 20px #025c1b;
+}
+
+.question-block-btn:active {
+  box-shadow: 2px 4px 20px #0f1310;
+}
+
+.customers {
+  background: url(../images/starssm.png) no-repeat top left;
+  margin-bottom: 93px;
+}
+
+.customers-info {
+  padding-top: 86px;
+  padding-left: 44px;
+}
+
+.customers-info-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.customers-info-text {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 38px;
+}
+
+.customers-card {
+  height: 329px;
+  max-width: 486px;
+  border-radius: 42px;
+  background: #FFF;
+  box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.10);
+  margin-bottom: 42px;
+}
+
+.customers-card-info {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 24px;
+}
+
+.customers-card-img {
+  width: auto;
+  height: 100%;
+}
+
+.customers-card-name {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin-left: 21px;
+}
+
+.customers-card-date {
+  display: block;
+  color: #585858;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 11px;
+}
+
+.card-link {
+  margin-left: auto;
+  margin-right: 28px;
+}
+
+.card-link a {
+  display: inline-block;
+  text-indent: 102%;
+  overflow: hidden;
+  width: 48px;
+  height: 48px;
+}
+
+.card-vk {
+  background: url(../images/vk.svg) no-repeat;
+}
+
+.card-fb {
+  background: url(../images/facebook.svg) no-repeat;
+}
+
+.customers-card-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 128.188%;
+  margin: 27px 10px 30px 25px;
+  max-width: 399px;
+}
+
+.footer {
+  background-color: #000;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+  margin-top: 70px;
+}
+
+.footer-text-desktop {
+  display: none;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer-img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-time {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+  margin-left: 20px;
+}
+
+.footer-calls {
+  margin-top: 23px;
+  margin-bottom: 40px;
+}
+
+.footer-calls-phone {
+  margin-right: 25px;
+  text-decoration: none;
+  -webkit-text-fill-color: #fff;
+}
+
+.footer-calls-phone::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: url(../images/telephone.png) center no-repeat;
+}
+
+.footer-calls-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 21px 12px 20px;
+  border-radius: 8px;
+}
+
+.footer-calls-btn::before {
+  display: none;
+}
+
+.footer-calls-btn span {
+  -webkit-text-fill-color: #fff;
+}
+
+.footer-copi {
+  margin-bottom: 73px;
+}
+
+.copi {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+}

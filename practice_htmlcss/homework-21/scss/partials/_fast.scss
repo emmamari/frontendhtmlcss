@@ -1,0 +1,159 @@
+@use "mixins" as *;
+@use "var" as *;
+
+
+.fast-block {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 116px;
+  margin-bottom: 153px;
+
+  @include desktop {
+    flex-wrap: wrap;
+  }
+
+  @include mobile {
+    margin-bottom: 70px;
+  }
+
+  .fast-block-img {
+    margin-right: 6%;
+  }
+  
+  .fast-image {
+    border-radius: 16px;
+    width: 100%;
+    display: block;
+  }
+
+  &-desk {
+    color: $black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 4px 17px;
+    border-radius: 32px;
+    background: #E7E8E3;
+    display: inline-block;
+    margin-bottom: 19px;
+    margin-top: 55px;
+  }
+
+  &-title {
+    color: $black;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @include mobile {
+      font-size: 38px;
+    }
+  }
+
+  &-text {
+    color: $gray;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 3px;
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &-actions {
+    margin-top: 30px;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .header-link {
+    background-image: none;
+    padding: 13px 32px;
+    margin-right: 24px;
+    
+    @include mobile {
+      margin-bottom: 20px;
+    }
+
+    &:hover {
+      @include hover {
+        background-color: #dadbd7;
+      }
+    }
+  }
+
+  .fast-block-link {
+    text-decoration: none;
+    color: $black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    .span-link {
+      padding-left: 10px;
+      font-size: 20px;
+    }
+
+    &:hover {
+      @include hover {
+        border-bottom: 2px solid $gray;
+      }
+    }
+  }
+}
+
+.fast-col {
+  flex-basis: 50%;
+
+  @include desktop {
+    flex-basis: 80%;
+  }
+
+  @include tablet {
+    flex-basis: 100%;
+  }
+}
+
+.fast-card {
+  width: 241px;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  &-caption {
+    color: $black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    background: url(../images/prices.png) top left no-repeat;
+    padding-top: 64px;
+    margin-bottom: 18px;
+  }
+
+  .caption-2 {
+    background: url(../images/work.png) top left no-repeat;
+  }
+
+  &-text {
+    color: $gray;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+}
+

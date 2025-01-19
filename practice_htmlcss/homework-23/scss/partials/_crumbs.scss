@@ -1,0 +1,21 @@
+@use "var" as *;
+@use "mixins" as *;
+
+.crumbs {
+  margin-bottom: 15px;
+  
+  &-span {
+    font-weight: 400;
+    line-height: 1.5;
+    color: $gray;
+    background: url(../images/arrowgray.png) right center no-repeat;
+    padding-right: 16px;
+  }
+
+  &-link {
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $primaryOrange;
+  }
+}

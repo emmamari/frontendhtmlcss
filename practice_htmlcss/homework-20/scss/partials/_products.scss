@@ -1,0 +1,160 @@
+@use "mixins" as *;
+@use "var" as *;
+
+.productss {
+  margin-bottom: 83px;
+
+  .products-titles {
+    margin-bottom: 34px;
+    color: $colorBrand;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .products-btn {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .btn-ruler {
+    background-image: none;
+    padding: 9px 27px;
+    font-size: 18px;
+    color: $colorBrand;
+    background-color: transparent;
+
+    &:hover {
+      @include hover {
+        background-color: $orange;
+        color: $white;
+      }
+    }
+  }
+
+  .btn-calc {
+    padding: 17px 54px 18px 76px;
+    font-size: 16px;
+    font-weight: 700;
+    background-position: left 22px center;
+  }
+
+  .btn-calc2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.products-content {
+  margin-bottom: 70px;
+}
+
+.products-tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products-tab-img {
+  background-color: #BABABA;
+  flex-basis: 50%;
+
+  @include desktop {
+    flex-basis: 100%;
+  }
+}
+
+.tab-img {
+  margin: 85px 69px;
+  border-radius: 3px;
+  max-width: 100%;
+  height: auto;
+
+  @include desktop {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.products-tab-bg {
+  background-color: #fff;
+  flex-basis: 50%;
+
+  @include desktop {
+    flex-basis: 100%;
+  }
+}
+
+.products-tab-info {
+  margin: 63px 47px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include mobile {
+    margin: 23px 20px;
+  }
+}
+
+.products-tab-info-title {
+  color: $orange;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.products-tab-info-text {
+  color: $colorBrand;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.table-title {
+  width: 389px;
+  color: $colorBrand;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  border-bottom: 2px dotted #BABABA;
+  position: relative;
+
+  @include desktop {
+    width: 300px;
+  }
+
+  @include tablet {
+    width: 250px;
+  }
+
+  @include mobile {
+    width: 70%;
+    font-size: 15px;
+    border-bottom: none;
+  }
+}
+
+.title-span {
+  position: absolute;
+  background-color: #fff;
+  top: 14px;
+  left: 0;
+
+  @include mobile {
+    top: 0;
+  }
+}
+
+.table-text {
+  color: $colorBrand;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  background-color: #fff;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}

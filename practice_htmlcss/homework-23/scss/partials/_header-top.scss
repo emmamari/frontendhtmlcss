@@ -1,0 +1,68 @@
+@use "var" as *;
+@use "mixins" as *;
+
+.header-top {
+  padding: 13px 0 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @include desktop {
+    flex-direction: column;
+  }
+
+  .main-nav {
+    @include desktop {
+      margin-bottom: 20px;
+    }
+
+    @include tablet {
+      text-align: center;
+    }
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &-item {
+      display: inline-block;
+      margin-right: 20px;
+
+      @include tablet {
+        padding: 5px;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $lightBlack;
+
+      &:hover {
+        @include hover {
+          border-bottom: 1px solid $lightBlack;
+        }
+      }
+    }
+  }
+
+  .btn-top {
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/userbtn.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 2px 0 2px 27px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      @include hover {
+        border-bottom: 1px solid $lightBlack;
+      }
+    }
+  }
+}

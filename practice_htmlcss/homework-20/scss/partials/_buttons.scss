@@ -1,0 +1,33 @@
+@use "var" as *;
+
+%btnIcon {
+  padding: 12px 19px 13px 47px;
+  border: none;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  color: $white;
+  background-position: left 10px center;
+  background-repeat: no-repeat;
+}
+
+.btn-ruler {
+  @extend %btnIcon;
+  background-color: $orange;
+  background-image: url(../images/ic-ruler.svg);
+}
+
+.btn-calc {
+  @extend %btnIcon;
+  background-color: $purple;
+  background-image: url(../images/ic-calc.svg);
+}
+
+.btn-ruler:active {
+  background-color: #a05009;
+  box-shadow: 0 0 10px 5px rgba(239, 127, 26, 0.75);
+}
+
+.btn-calc:active {
+  box-shadow: 0 0 10px 5px rgba(59, 58, 99, 0.75);
+}

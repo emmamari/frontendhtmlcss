@@ -1,0 +1,45 @@
+@use "var" as *;
+@use "mixins" as *;
+
+.header {
+  padding: 16px 0;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__main-nav {
+    margin: 0 65px 7px auto;
+
+    @include desktop {
+      margin-right: 0;
+    }
+  }
+
+  &__btn-link {
+    margin-right: 24px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btns {
+    @include desktop {
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+  .hover {
+    &:hover {
+      @include hover {
+        background: #ca4611;
+      }
+    }
+  }
+}

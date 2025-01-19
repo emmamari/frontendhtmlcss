@@ -1,0 +1,466 @@
+@media screen and (max-width: 1190px) {
+  .phone-numbers {
+    margin-left: 20px;
+  }
+
+  .header-top-info {
+    margin-left: 30px;
+  }
+
+  .map {
+    width: 670px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .phone-numbers {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .phone-numbers span:first-child::after {
+    display: none;
+  }
+
+  .header-bottom {
+    margin-top: 21px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .map {
+    width: 570px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .slogan {
+    width: 240px;
+  }
+
+  .phone-numbers {
+    margin-left: 50px;
+    font-size: 20px;
+  }
+
+  .header-top-info {
+    margin-top: 6px;
+  }
+
+  .product {
+    width: 470px;
+    margin-left: 45px;
+  }
+
+  .social-links {
+    margin-left: 130px;
+  }
+
+  .header-bottom {
+    margin-left: 0;
+  }
+
+  .contact-info-block {
+    width: 38%;
+  }
+
+  .block-info {
+    padding-left: 25px;
+  }
+
+  .map {
+    width: 470px;
+  }
+
+  .route-block-info {
+    width: 50%;
+  }
+
+  .route-block-text {
+    width: 360px;
+  }
+
+  .fcs {
+    width: 270px;
+  }
+
+  .car {
+    width: 270px;
+  }
+
+  .number {
+    width: 270px;
+    margin-bottom: 20px;
+  }
+
+  .phonee {
+    width: 270px;
+    margin-bottom: 20px;
+  }
+
+  .btn-route {
+    width: 270px;
+  }
+
+  .route-block-img {
+    margin-top: 100px;
+  }
+
+  .footer-text-link {
+    margin-bottom: 30px;
+  }
+
+  .span-copi {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slogan {
+    width: 208px;
+  }
+
+  .phone-numbers {
+    font-size: 18px;
+    margin-left: 25px;
+  }
+
+  .product {
+    margin-left: 0;
+  }
+
+  .social-links {
+    margin-left: 90px;
+  }
+
+  .contact-info-inner {
+    display: block;
+  }
+
+  .contact-info-block {
+    width: 100%;
+    margin-bottom: 31px;
+  }
+
+  .block-info {
+    padding-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .mobile {
+    width: 300px;
+  }
+
+  .time {
+    margin-right: 117px;
+  }
+
+  .social {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .route-block {
+    display: block;
+  }
+
+  .route-block-info {
+    width: 100%;
+  }
+
+  .route-block-text {
+    width: 570px;
+  }
+
+  .fcs {
+    width: 570px;
+  }
+
+  .route-block-img {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .footer-text-link {
+    margin-bottom: 47px;
+}
+
+.span-inner {
+  margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header-top-info {
+    margin-left: 100px;
+    margin-top: 6px;
+  }
+
+  .product {
+    width: 270px;
+  }
+
+  .nav-list {
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .nav-link {
+    margin-left: 0;
+  }
+
+  .block-info {
+    display: block;
+  }
+
+  .social {
+    text-align: start;
+  }
+
+  .route-block-text {
+    width: 450px;
+  }
+
+  .fcs {
+    width: 470px;
+  }
+
+  .car {
+    width: 220px;
+  }
+
+  .number {
+    width: 220px;
+  }
+
+  .phonee {
+    width: 220px;
+  }
+
+  .btn-route {
+    width: 220px;
+  }
+
+  .footer-text-left {
+    display: block;
+  }
+
+  .footer-text {
+    margin-bottom: 20px;
+  }
+
+  .footer-text-link {
+    margin-bottom: 20px;
+  }
+
+  .footer-text-right {
+    display: block;
+  }
+
+  .span-copi {
+    margin-left: 133px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding-bottom: 15px;
+  }
+
+  .logo {
+    margin-right: 50px;
+  }
+
+  .slogan {
+    width: 280px;
+  }
+
+  .phone-numbers {
+    display: block;
+    margin-top: 18px;
+    margin-left: 70px;
+  }
+
+  .header-top-info {
+    display: flex;
+    margin-left: 70px;
+  }
+
+  .shedule {
+    margin-right: 45px;
+  }
+
+  .header-bottom {
+    display: block;
+  }
+
+  .product {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .social-links {
+    margin-left: 0;
+  }
+
+  .nav {
+    background: #181818;
+    border-radius: 10px;
+    padding: 30px 0;
+    margin: 0 15px;
+  }
+
+  .nav-link {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    padding-left: 30px;
+  }
+
+  .contact-info-title {
+    font-size: 24px;
+  }
+
+  .fcs {
+    width: 430px;
+  }
+
+  .car {
+    width: 430px;
+  }
+
+  .number {
+    width: 430px;
+  }
+
+  .phonee {
+    width: 430px;
+  }
+
+  .btn-route {
+    width: 430px;
+  }
+
+  .footer-text {
+    margin-right: 0;
+  }
+
+  .footer-text-link {
+    margin-right: 0;
+  }
+
+  .span-inner {
+    margin-right: 0;
+    display: block;
+  }
+
+  .span-copi {
+    margin-left: 0;
+  }
+}
+
+@media  (min-width: 360px) and (max-width: 470px) {
+  .logo {
+    margin-right: 30px;
+  }
+
+  .slogan {
+    width: 203px;
+  }
+
+  .phone-numbers {
+    margin-left: 0;
+  }
+
+  .header-top-info {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .product {
+    margin-bottom: 32px;
+  }
+
+  .social-links {
+    margin-bottom: 15px;
+  }
+
+  .nav {
+    margin-bottom: 46px;
+  }
+
+  .contact-text {
+    margin-bottom: 30px;
+  }
+
+  .contact-info-title {
+    margin-bottom: 20px;
+  }
+
+  .contact-info-block {
+    width: 100%;
+  }
+
+  .block-info {
+    padding-left: 30px;
+  }
+
+  .social {
+    margin-top: 0;
+    margin-left: 23px;
+  }
+
+  .map {
+    height: 206px;
+    margin-bottom: 81px;
+  }
+
+  .route-block-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .fcs {
+    width: 100%;
+  }
+
+  .car {
+    width: 100%;
+  }
+
+  .number {
+    width: 100%;
+  }
+
+  .phonee {
+    width: 100%;
+  }
+
+  .btn-route {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .route-block-img {
+    margin: 0 -19px;
+  }
+
+  .footer-text-link {
+    margin-bottom: 41px;
+  }
+
+  .span-inner {
+    margin-bottom: 20px;
+  }
+
+  .span-copi {
+    margin-bottom: 41px;
+  }
+}

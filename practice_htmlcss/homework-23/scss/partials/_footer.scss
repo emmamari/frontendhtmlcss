@@ -1,0 +1,81 @@
+@use "var" as *;
+@use "mixins" as *;
+
+.footer {
+  background-color: $white;
+  padding: 26px 0 31px;
+
+  &-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &-payment {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 18px;
+      color: $lightBlack;
+      margin-right: 18px;
+
+      @include mobile {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      border-radius: 50%;
+      margin-right: 10px;
+      margin-top: 3px;
+
+      &:hover {
+        @include hover {
+          box-shadow: 0px 0px 10px $gray;
+        }
+      }
+    }
+
+    .mastercard {
+      background: url(../images/mastercard.png) center no-repeat, $lightGray;
+    }
+
+    .visa {
+      background: url(../images/visa.png) center no-repeat, $lightGray;
+    }
+
+    .yandex {
+      background: url(../images/yandex.png) center no-repeat, $lightGray;
+    }
+  }
+
+  &-address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $lightBlack;
+    margin-right: 7px;
+    margin-bottom: 3px;
+  }
+}

@@ -1,0 +1,275 @@
+@media screen and (max-width: 1098px) {
+  .main-block-content {
+    min-width: 395px;
+  }
+
+  .main-block-title {
+    font-size: 43px;
+  }
+
+  .main-block-item {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .main-block-content {
+    width: 100%;
+  }
+  
+  .main-block-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .services-block-content-card-text {
+    font-size: 19px;
+  }
+
+  .services-block-content-card-size {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .header-top-inner {
+    display: block;
+  }
+
+  .calls {
+    margin-top: 20px;
+  }
+
+  .contacts {
+    margin-left: auto;
+  }
+
+  .main-block-title {
+    font-size: 38px;
+  }
+
+  .main-block-item {
+    font-size: 13px;
+  }
+
+  .stage-block-title {
+    font-size: 32px;
+  }
+
+  .stage-block-subtitle {
+    font-size: 18px;
+  }
+
+  .stage-block-text {
+    font-size: 17px;
+  }
+
+  .information-block-title {
+    font-size: 30px;
+  }
+  .information-block-text {
+    font-size: 16px;
+  }
+
+  .services-block-title {
+    font-size: 32px;
+  }
+
+  .services-block-link {
+    font-size: 14px;
+  }
+
+  .services-block-content-card {
+    min-width: 315px;
+  }
+
+  .services-block-content-card-text {
+    font-size: 18px;
+  }
+
+  .services-block-content-card-size {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .services-block-content-card {
+    min-width: 300px;
+  }
+
+  .services-block-content-card-text {
+    font-size: 16px;
+  }
+
+  .services-block-content-card-size {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .logonav {
+    display: flex;
+  }
+
+  .toggle-nav {
+    margin-left: auto;
+  }
+  
+  .main-nav-list  {
+    display: block;
+    text-align: right;
+  }
+
+  .main-nav-item {
+    display: block;
+  }
+  
+  .main-nav-item {
+    font-size: 14px;
+  }
+
+  .main-block-title {
+    font-size: 35px;
+  }
+
+  .stage-block-columns {
+    min-width: 250px;
+  }
+
+  .stage-block-title {
+    font-size: 30px;
+}
+
+  .stage-block-text {
+    font-size: 16px;
+}
+
+  .information-block-title {
+    font-size: 28px;
+  }
+
+  .information-block-text {
+    font-size: 14px;
+}
+
+  .services-block-title {
+    font-size: 30px;
+}
+
+  .services-block-link {
+    font-size: 12px;
+}
+
+  .services-block-content-card {
+    min-width: 281px;
+  }
+
+  .services-block-content-card-text {
+    font-size: 14px;
+  }
+
+  .services-block-content-card-size {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .services-block-content-card {
+    min-width: 275px;
+  }
+
+  .services-block-content-card-text {
+    font-size: 14px;
+  }
+
+  .services-block-content-card-size {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .main-nav-list {
+    justify-content: space-around;
+  }
+  
+  .services-block-content-card {
+    width: 80%;
+  }
+
+  .services-block-content-card-text {
+    font-size: 15px;
+  }
+
+  .services-block-content-card-size {
+    font-size: 25px;
+  }
+
+  .toggle-nav {
+		display: block;
+	}
+
+  .main-nav {
+    overflow: hidden;
+    transition: height 2s;
+  }
+  
+  .nav-hidden {
+    height: 0;
+  }
+
+  .main-list {
+		display: block;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 550px) {
+  .stage-block-columns {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 494px) {
+  .services-block-title {
+    margin-bottom: 10px;
+  }
+
+  .services-block-link {
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  .services-block-content-card {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .calls {
+    display: block;
+    text-align: center;
+  }
+
+  .calls-btn {
+    margin: 0 0 15px;
+  }
+
+  .main-block-title {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .stage-block-title {
+    font-size: 21px;
+  }
+
+  .information-block-title {
+    font-size: 25px;
+  }
+
+  .services-block-title {
+    font-size: 28px;
+  }
+}

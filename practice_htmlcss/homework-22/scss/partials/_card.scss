@@ -1,0 +1,74 @@
+@use "var" as *;
+
+.card {
+  height: 100%;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #FAE8E1;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &_outline {
+    border: 1px solid $graylight;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    text-align: center;
+    padding: 48px 35px 24px 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_payments {
+    &::before {
+      background-image: url(../images/payments.png);
+    }
+  }
+
+  &_description {
+    &::before {
+      background-image: url(../images/description.png);
+    }
+  }
+
+  &_house {
+    &::before {
+      background-image: url(../images/house.png);
+    }
+  }
+
+  &_receipt {
+    &::before {
+      background-image: url(../images/receipt.png);
+    }
+  }
+
+  &_key {
+    &::before {
+      background-image: url(../images/key.png);
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    color: $black;
+    margin: 0;
+
+    &_big {
+      font-size: 24px;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 36px;
+    margin-top: 24px;
+  }
+}

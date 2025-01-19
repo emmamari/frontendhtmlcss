@@ -1,0 +1,241 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #111;
+  font-size: 18px;
+  line-height: 1.27;
+  margin: 0;
+}
+
+.container {
+  max-width: 1160px;
+  min-width: 980px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* HEADER */
+
+.header {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(17, 17, 17, .5);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.phone {
+  color: #007198;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.btn {
+  background-color: #F47220;
+  color: #111;
+  box-shadow: 3px 3px 5px rgba(244, 114, 32, .4);
+  border: none;
+  padding: 5px 13px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 2;
+}
+
+/* NAV */
+
+.main-nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 11px 0 13px;
+}
+
+.main-nav-link {
+  color: #111;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* MAIN-BLOCK */
+
+.main-block {
+  background-color: rgba(72, 184, 223, .2);
+}
+
+.main-block-inner {
+  display: flex;
+  background-image: url(../images/sofa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0 67px;
+}
+
+.main-block-title {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.main-block-title span {
+  color: #007198;
+}
+
+.main-block-text {
+  width: 500px;
+  margin-right: 54px;
+}
+
+/* BLOCK-INFO */
+
+.block-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.block-info-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 98px 0 13px;
+}
+
+.block-info-title span {
+  color: #007198;
+}
+
+.block-info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 373px;
+  border: 1px solid #007198;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(17, 17, 17, .25);
+  margin-bottom: 20px;
+}
+
+.img-info {
+  width: auto;
+  height: 190px;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.block-info-content-text {
+  font-weight: 400;
+  padding: 0 14px 0 18px;
+  flex-grow: 1;
+  
+}
+
+.block-info-content-text span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.block-info-link {
+  color: #000;
+  font-weight: 700;
+  margin-top: auto;
+  margin-left: auto;
+  padding: 0 25px 26px 0;
+}
+
+/* BLOCK-CHEMISTRY */
+
+.block-chemistry-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 81px;
+}
+
+.block-chemistry-title span {
+  color: #007198;
+}
+
+.block-chemistry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.block-chemistry-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 275px;
+  border: 1px solid #007198;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(17, 17, 17, .25);
+  margin-bottom: 20px;
+}
+
+.img-chemistry {
+  width: auto;
+  height: 130px;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.block-chemistry-text {
+  font-weight: 400;
+  padding: 0 6px 35px 19px;
+  flex-grow: 1;
+}
+
+.block-chemistry-text span {
+  font-weight: 700;
+}
+
+/* BLOCK LOGOS */
+
+.block-logos {
+  margin: 84px 0 167px;
+}
+
+.block-logos-text {
+  font-size: 16px;
+  font-weight: 400;
+  width: 683px;
+}
+
+.block-logos-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+
+.footer {
+  padding-top: 39px;
+  background-color: rgba(72, 184, 223, .2);
+  
+}
+
+.footer-container {
+  border-top: 1px solid rgba(17, 17, 17, .5);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text, .footer-addres {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 36px 0 37px;
+}
+
+.footer-addres {
+  font-style: normal;
+}

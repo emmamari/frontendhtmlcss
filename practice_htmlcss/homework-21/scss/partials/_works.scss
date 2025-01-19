@@ -1,0 +1,108 @@
+@use "mixins" as *;
+@use "var" as *;
+
+.works {
+  margin-bottom: 50px;
+}
+
+.works-content {
+  text-align: center;
+  margin-bottom: 47px;
+
+  &-title {
+    color: $black;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    margin-bottom: 21px;
+
+    @include mobile {
+      font-size: 38px;
+    }
+  }
+
+  &-text {
+    color: $gray;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include desktop {
+    justify-content: center;
+  }
+}
+
+.works-card {
+  border-radius: 16px;
+  border: 1px solid #E7E8E3;
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  padding: 28px 50px 0 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-title {
+    color: $black;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+    padding-top: 73px;
+    background: url(../images/house.png) top center no-repeat;
+    margin-bottom: 17px;
+    margin-top: 19px;
+  }
+
+  .title-2 {
+    background: url(../images/receipt.png) top center no-repeat;
+  }
+
+  .title-3 {
+    background: url(../images/key.png) top center no-repeat;
+  }
+
+  &-text {
+    color: $gray;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 26px;
+    margin-top: 0;
+  }
+
+  &-link {
+    color: $black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: 22px;
+    border-bottom: 2px solid transparent;
+
+    .span-link {
+      padding-left: 10px;
+      font-size: 20px;
+    }
+
+    &:hover {
+      @include hover {
+        border-bottom: 2px solid $gray;
+      }
+    }
+  }
+}
+
+

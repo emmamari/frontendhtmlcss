@@ -1,0 +1,13 @@
+@use "var" as *;
+
+.span-bar {
+  display: inline-block;
+  color: #2A2C1F;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  border-radius: 32px;
+  background: #E7E8E3;
+  padding: 4px 12px;
+  margin-bottom: 9px;
+}

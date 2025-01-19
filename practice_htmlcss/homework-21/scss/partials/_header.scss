@@ -1,0 +1,90 @@
+@use "mixins" as *;
+@use "var" as *;
+
+.header {
+  padding: 19px 0 10px;
+
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include desktop {
+      justify-content: center;
+    }
+
+    &-actions {
+      @include desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .header-link {
+      margin-right: 24px;
+
+      @include mobile {
+        margin-bottom: 20px;
+      }
+    }
+
+    .header-btn {
+      @include mobile {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .logo {
+    margin-right: 10px;
+      @include desktop {
+        margin-bottom: 20px;
+    }
+  }
+
+  .main-nav {
+    margin-left: auto;
+    margin-right: 111px;
+
+    @include desktop {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+    @include tablet {
+      margin-right: auto;
+    }
+
+  &-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-item {
+    display: inline-block;
+    margin-right: 31px;
+    margin-bottom: 5px;
+
+    @include mobile {
+      margin-right: 10px;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+      &:hover {
+        @include hover {
+          color: #2A2C1F;
+          border-bottom: 1px solid $gray;
+        }
+      }
+    }
+  }
+}

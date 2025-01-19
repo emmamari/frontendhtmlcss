@@ -1,0 +1,77 @@
+@use "mixins" as *;
+@use "var" as *;
+
+.header {
+  padding: 17px 0;
+
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  &-actions {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .btn-ruler {
+    margin-right: 14px;
+
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.logo {
+  margin-right: 10px;
+  @include desktop {
+    margin-bottom: 20px;
+  }
+}
+
+.main-nav {
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
+  &-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &-item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  &-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding-top: 4px;
+    border-top: 4px solid transparent;
+
+    &:hover {
+      @include hover {
+        border-top: 4px solid $orange;
+        color: $orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md mb-4">
+      <div class="container-xxl">
+        <a class="navbar-brand logo" href="#">
+          <img src="images/logo.svg" alt="Enphoria">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav fs-5">
+            <li class="nav-item me-4">
+              <a class="nav-link active" aria-current="page" href="#">
+                Shop
+              </a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">
+                Men
+              </a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">
+                Women
+              </a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">
+                Combos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Joggers
+              </a>
+            </li>
+          </ul>
+          <hr>
+          <button type="button" class="btn btn-light ms-auto" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <i class="bi bi-person fs-5"></i>
+          </button>
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-secondary" id="loginModalLabel">Log in</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="email" class="form-label text-secondary">Email address</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label text-secondary">Password</label>
+                      <input type="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" class="mb-3 btn btn-info text-white d-flex justify-content-center align-items-center w-50 modalbtnn">Log in</button>
+                    <div class="">
+                      <a href="#" class="btn btn-outline-info d-flex justify-content-center align-items-center w-50">Sign up</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="carousel-wrapper">
+    <div id="carouselMainIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselMainIndicators" data-bs-slide-to="0" class="me-3 active"></button>
+        <button type="button" data-bs-target="#carouselMainIndicators" data-bs-slide-to="1" class="me-3"></button>
+        <button type="button" data-bs-target="#carouselMainIndicators" data-bs-slide-to="2" class="me-3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slide-1.jpg" class="carousel-item-image d-block w-100" alt="Slide 1">
+          <div class="carousel-caption d-none d-sm-block text-start top-50 start-25 bottom-0 translate-middle-y">
+            <h1 class="carousel-item-title mb-4">
+              Summer
+              <span class="d-block">Value Pack</span>
+            </h1>
+            <a href="#" class="btn btn-light px-5">Shop now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide.jpg" class="carousel-item-image d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide-3.jpg" class="carousel-item-image d-block w-100" alt="Slide 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMainIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMainIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+  <div class="container-xxl mb-5">
+    <div>
+      <h3 class="texth3 mb-5">Categories For Men</h3>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2  row-cols-md-3 justify-content-md-center row-cols-lg-4 mb-4 align-items-end">
+      <div class="col mb-3">
+        <div class="card cardimg h-100">
+          <img src="images/men1.jpg" class="card-img-top" alt="For Men">
+          <div class="card-body">
+            <a href="#" class="text-decoration-none">
+              <div class="d-flex align-items-center imglink">
+                <p class="mb-0 fs-6 fw-semibold lh-lg text-dark">Shirts</p>
+                <i class="bi bi-arrow-right fs-5 text-secondary ms-auto"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card cardimg h-100">
+          <img src="images/men2.jpg" class="card-img-top img" alt="For Men">
+          <div class="card-body">
+            <a href="#" class="text-decoration-none">
+              <div class="d-flex align-items-center imglink">
+                <p class="mb-0 fs-6 fw-semibold lh-lg text-dark">Printed T-Shirts</p>
+                <i class="bi bi-arrow-right fs-5 text-secondary ms-auto"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card cardimg h-100">
+          <img src="images/men3.jpg" class="card-img-top img" alt="For Men">
+          <div class="card-body">
+            <a href="#" class="text-decoration-none">
+              <div class="d-flex align-items-center imglink">
+                <p class="mb-0 fs-6 fw-semibold lh-lg text-dark">Plain T-Shirt</p>
+                <i class="bi bi-arrow-right fs-5 text-secondary ms-auto"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card cardimg h-100">
+          <img src="images/men4.jpg" class="card-img-top img" alt="For Men">
+          <div class="card-body">
+            <a href="#" class="text-decoration-none">
+              <div class="d-flex align-items-center imglink">
+                <p class="mb-0 fs-6 fw-semibold lh-lg text-dark">Polo T-Shirt</p>
+                <i class="bi bi-arrow-right fs-5 text-secondary ms-auto"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-xxl mb-5">
+    <div>
+      <h3 class="texth3 mb-5">Categories For Women</h3>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-md-center row-cols-lg-4 mb-4 align-items-end">
+      <div class="col mb-3">
+        <div class="card cardimg h-100">
+          <img src="images/women1.jpg" class="card-img-top" alt="For Men">
+          <div class="card-body">
+            <a href="#" class="text-decoration-none">
+              <div class="d-flex align-items-center imglink">
+                <p class="mb-0 fs-6 fw-semibold lh-lg text-dark">Hoodies & Sweetshirt</p>
+                <i class="bi bi-arrow-right fs-5 text-secondary ms-auto"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card cardimg h-100">
+          <img src="images/women2.jpg" class="card-img-top" alt="For Men">
+          <div class="card-body">
+            <a href="#" class="text-decoration-none">
+              <div class="d-flex align-items-center imglink">
+                <p class="mb-0 fs-6 fw-semibold lh-lg text-dark">Coats & Parkas</p>
+                <i class="bi bi-arrow-right fs-5 text-secondary ms-auto"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card cardimg h-100">
+          <img src="images/women3.jpg" class="card-img-top" alt="For Men">
+          <div class="card-body">
+            <a href="#" class="text-decoration-none">
+              <div class="d-flex align-items-center imglink">
+                <p class="mb-0 fs-6 fw-semibold lh-lg text-dark">Tees & T-Shirt</p>
+                <i class="bi bi-arrow-right fs-5 text-secondary ms-auto"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card cardimg h-100">
+          <img src="images/women4.jpg" class="card-img-top" alt="For Men">
+          <div class="card-body">
+            <a href="#" class="text-decoration-none">
+              <div class="d-flex align-items-center imglink">
+                <p class="mb-0 fs-6 fw-semibold lh-lg text-dark">Boxers</p>
+                <i class="bi bi-arrow-right fs-5 text-secondary ms-auto"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-xxl ">
+    <div class="row justify-content-center blockblack">
+      <div class="col-12 text-center text-white">
+        <h2 class="text-white blackh2 fw-bold mb-3">Top Brands Deal</h2>
+      </div>
+      <div class="row justify-content-center brmb">
+        <div class="col-6 col-md-2 text-center my-2 me-4 brends d-flex justify-content-center align-items-center">
+          <a href="#" class="">
+              <img src="images/nike.jpg" alt="Nike">
+          </a>
+        </div>
+        <div class="col-6 col-md-2 text-center my-2 me-4 brends d-flex justify-content-center align-items-center">
+          <a href="#">
+            <img src="images/him.png"  alt="H&M">
+          </a>
+        </div>
+        <div class="col-6 col-md-2 text-center my-2 me-4 brends d-flex justify-content-center align-items-center">
+          <a href="#">
+            <img src="images/levis.png" alt="Levi’s">
+          </a>
+        </div>
+        <div class="col-6 col-md-2 text-center my-2 me-4 brends d-flex justify-content-center align-items-center">
+          <a href="#">
+            <img src="images/polo.png" alt="U.S. POLO ASSN.">
+          </a>
+        </div>
+        <div class="col-6 col-md-2 text-center my-2 me-4 brends d-flex justify-content-center align-items-center">
+          <a href="#">
+            <img src="images/puma.jpg" alt="PUMA">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-xxl blockuser">
+    <div>
+      <h3 class="texth3 mb-5">Feedback</h3>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-md-center">
+      <div class="col mb-3">
+        <div class="card h-100">
+          <div class="d-flex justify-content-center mt-4 mb-4">
+            <img src="images/user1.jpg"  alt="user">
+          </div>
+          <div class="card-body px-4 pb-4">
+            <span class="card-title fs-4 fw-medium text-dark">Floyd Miles</span>
+            <p class="card-text text-body-secondary fs-6 fw-normal mt-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit </p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card h-100">
+          <div class="d-flex justify-content-center mt-4 mb-4">
+            <img src="images/user2.jpg" alt="user">
+          </div>
+          <div class="card-body px-4 pb-4">
+            <span class="card-title fs-4 fw-medium text-dark">Ronald Richards</span>
+            <p class="card-text text-body-secondary fs-6 fw-normal mt-4">ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card h-100">
+          <div class="d-flex justify-content-center mt-4 mb-4">
+            <img src="images/user3.jpg" alt="user">
+          </div>
+          <div class="card-body px-4 pb-4">
+            <span class="card-title fs-4 fw-medium text-dark">Savannah Nguyen</span>
+            <p class="card-text text-body-secondary fs-6 fw-normal mt-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer bg-dark text-white py-5">
+    <div class="container-xxl border-top pt-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-8">
+          <p class="mb-0">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+        </div>
+        <div class="col-12 col-md-3 mt-3">
+          <a href="#" class="text-decoration-none">
+            <i class="bi bi-facebook ilink"></i>
+            <i class="bi bi-instagram ilink"></i>
+            <i class="bi bi-twitter ilink mb-3"></i>
+            <i class="bi bi-linkedin ilink"></i>
+          </a>
+        </div>
+      </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const myModal = document.getElementById('loginModal')
+    const myInput = document.getElementById('email')
+    myModal.addEventListener('shown.bs.modal', () => {myInput.focus()})
+  </script>
+</body>
+</html>
