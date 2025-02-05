@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="4.622" timestamp="2024-11-20T23:33:36.909931+06:00" hostname="AsusVbook"><testcase classname="test_employees_api" name="test_employees_api" time="4.019" /></testsuite></testsuites>
